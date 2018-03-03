@@ -1,0 +1,143 @@
+@font-face
+
+{
+	font-family: lemon_milk;
+	src:url(../fonts/LemonMilkbold.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	color: #333;
+	font: 17px 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+
+.container {
+	max-width: 1200px;
+}
+
+.navbar {
+	height:90px;
+	padding-top:30px;
+	background-color: transparent;
+	color: #fff;
+}
+
+.navbar-header {
+	padding:0;
+	margin:0;
+}
+
+.navbar a{
+	font-family: Lato;
+	color: #fff!important;
+	font-weight: bold;
+}
+.navbar a{
+	font-size:13px;
+}
+.navbar li:hover{
+	background-color:transparent;
+}
+.navbar-nav__link a{
+	padding: 0;
+	margin: 0;
+}
+.navbar .navbar-brand{
+	font-size: 36px;
+
+}
+.header {
+	height: 100vh;
+	background: url('../img/header.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	position:relative;
+}
+.header .container-fluid,.header .row{
+	margin:0!important;
+	padding:0!important;
+	width:100%;
+	z-index:1;
+}
+
+.header-img{
+	position: absolute;
+	right: -5%;
+	margin-top:30px;
+	width:55%;
+
+}
+
+.header .slogan-wrapper{
+	position:absolute;
+	margin-top:25vh;
+	margin-left:10%;
+
+	background: url(../img/header-grey.jpg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+
+}
+.header div {
+	position: relative;
+}
+.header h1.main-slogan {
+	font-family: lemon_milk;
+	font-size: 130px;
+	line-height:0.84;
+	text-transform: uppercase;
+
+}
+
+.header span.main-slogan {
+	font-family: lemon_milk;
+	font-size: 75px;
+	line-height:0.7;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+	.header h1.main-slogan{
+		font-size: 100px;
+	}
+	.header span.main-slogan{
+		font-size: 100px;
+	}
+}
+
+
+.section {
+	padding: 50px 0;
+	text-align: justify;
+}
+
+	.section:nth-of-type(even) {
+		background: #f3f3f3;
+	}
+
+	.section *:not(:first-child) {
+		margin-top: 30px;
+	}
+
+.footer {
+	padding: 30px;
+}
